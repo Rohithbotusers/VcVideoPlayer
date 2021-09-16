@@ -7,21 +7,45 @@ from pyrogram.errors import MessageNotModified
 @Client.on_message(filters.command("start"))
 async def start(client, message):
    buttons = [
-            [
-                InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
-            ],
-            [
-                InlineKeyboardButton("Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-            ],
-            [
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-                InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
-            ],
-            [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-            ]
-            ]
+    [
+        InlineKeyboardButton(
+            text="༒ 𝙰𝙳𝙳 𝚅𝙰𝙻𝚃 𝙰𝙾𝙸 PLAYER 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ༒",url="t.me/VALTAOIVCPLAYERBOT?startgroup=true"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+          text="༺ 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 & 𝙷𝙴𝙻𝙿 ༻", callback_data="help_back"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+          text="༄ 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ༄", url="https://t.me/PigasusUpdates"
+        ),
+      
+        InlineKeyboardButton(
+          text="★ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 ★", url="http://t.me/VALTAOITHEBOT"
+        ),
+    ],
+         
+    [
+       InlineKeyboardButton(
+           text="✫ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃 ✫", url="https://t.me/PigasusSupport"
+         ),
+    ],
+    [
+      InlineKeyboardButton(
+           text="彡 𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 彡", url="https://t.me/Rohith_no_1"
+         ),
+    ],
+    [
+        InlineKeyboardButton(
+          text="༆ 𝚜𝚘𝚞𝚛𝚌𝚎 ༆", callback_data="source_"
+        ),
+     
+    ],
+]
+
+
    reply_markup = InlineKeyboardMarkup(buttons)
    if message.chat.type == 'private':
        await message.reply_text(
@@ -29,7 +53,7 @@ async def start(client, message):
           reply_markup=reply_markup
        )
    else:
-      await message.reply(f"**@{ASSISTANT_NAME} is Alive! ✨**")
+      await message.reply(f"**@Crimsonflashs is Alive! ✨**")
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
@@ -37,7 +61,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Pigasussupport"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -53,7 +77,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/pigasussupport"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -67,22 +91,45 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data=="devs":
         buttons = [
-            [
-                InlineKeyboardButton("Lᴏᴜɪꜱ", url="https://t.me/DeeCodeBots"),
-                InlineKeyboardButton("Eʀʀᴏʀ", url="https://t.me/ProErrorXD"),
-            ],
-            [
-                InlineKeyboardButton("Bʟᴀᴢᴇ", url="https://t.me/piroXpower"),
-                InlineKeyboardButton("Pʀɪɴᴄᴇ", url="https://t.me/DEVILDAD_PRINCE"),
-            ],
-            [
-                InlineKeyboardButton("Hʏᴏᴋᴀ", url="https://t.me/Pratheek_XD"),
-                InlineKeyboardButton("Zᴀʟɪᴍ", url="https://t.me/Jalim_Munda"),
-            ],
-            [
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-            ]
-            ]
+    [
+        InlineKeyboardButton(
+            text="༒ 𝙰𝙳𝙳 𝚅𝙰𝙻𝚃 𝙰𝙾𝙸 PLAYER 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ༒",url="t.me/VALTAOIVCPLAYERBOT?startgroup=true"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+          text="༺ 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 & 𝙷𝙴𝙻𝙿 ༻", callback_data="help_back"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+          text="༄ 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ༄", url="https://t.me/PigasusUpdates"
+        ),
+      
+        InlineKeyboardButton(
+          text="★ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 ★", url="http://t.me/VALTAOITHEBOT"
+        ),
+    ],
+         
+    [
+       InlineKeyboardButton(
+           text="✫ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃 ✫", url="https://t.me/PigasusSupport"
+         ),
+    ],
+    [
+      InlineKeyboardButton(
+           text="彡 𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 彡", url="https://t.me/Rohith_no_1"
+         ),
+    ],
+    [
+      InlineKeyboardButton(
+          text="༆ 𝚜𝚘𝚞𝚛𝚌𝚎 ༆", callback_data="source_"
+        ),
+     
+    ],
+]
+
+
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
@@ -94,21 +141,45 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data=="start":
         buttons = [
-            [
-                InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
-            ],
-            [
-                InlineKeyboardButton("Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-            ],
-            [
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-                InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
-            ],
-            [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-            ]
-            ]
+    [
+        InlineKeyboardButton(
+            text="༒ 𝙰𝙳𝙳 𝚅𝙰𝙻𝚃 𝙰𝙾𝙸 PLAYER 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ༒",url="t.me/VALTAOIVCPLAYERBOT?startgroup=true"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+          text="༺ 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 & 𝙷𝙴𝙻𝙿 ༻", callback_data="help_back"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+          text="༄ 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ༄", url="https://t.me/PigasusUpdates"
+        ),
+      
+        InlineKeyboardButton(
+          text="★ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 ★", url="http://t.me/VALTAOITHEBOT"
+        ),
+    ],
+         
+    [
+       InlineKeyboardButton(
+           text="✫ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃 ✫", url="https://t.me/PigasusSupport"
+         ),
+    ],
+    [
+      InlineKeyboardButton(
+           text="彡 𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 彡", url="https://t.me/Rohith_no_1"
+         ),
+    ],
+    [
+      InlineKeyboardButton(
+          text="༆ 𝚜𝚘𝚞𝚛𝚌𝚎 ༆", callback_data="source_"
+        ),
+     
+    ],
+]
+
+
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
