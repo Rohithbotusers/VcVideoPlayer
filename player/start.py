@@ -11,15 +11,15 @@ async def start(client, message):
                 InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("my owner", url=f"https://t.me/crimsonflashs"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"ttps://t.me/pigasusupdates"),
+                InlineKeyboardButton("my owner", url="https://t.me/crimsonflashs"),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url="https://t.me/pigasusupdates"),
             ],
             [
                 InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
                 InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
             ],
             [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/VALTAOIVCPLAYERBOT?startgroup=true"),
+               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url="http://t.me/VALTAOIVCPLAYERBOT?startgroup=true"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
@@ -29,7 +29,7 @@ async def start(client, message):
           reply_markup=reply_markup
        )
    else:
-      await message.reply(f"**@{ASSISTANT_NAME} is Alive! ✨**")
+      await message.reply(f"**@crimsonflashs is Alive! ✨**")
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
@@ -37,7 +37,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/pigasussupport"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -53,7 +53,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/pigasussupport"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -68,10 +68,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="devs":
         buttons = [
             [
-                InlineKeyboardButton("Lᴏᴜɪꜱ", url="https://t.me/prayagraj_op"),
-                InlineKeyboardButton("Eʀʀᴏʀ", url="https://t.me/prayagraj_op"),
+                InlineKeyboardButton("channel", url="https://t.me/pigasusupdates"),
+                InlineKeyboardButton("support", url="https://t.me/Pigasussupport"),
             ],
-
+            [
+                InlineKeyboardButton("my owner", url="https://t.me/crimsonflashs"),
+                InlineKeyboardButton("logs", url="https://t.me/PigasusLogs"),
+            ],
+            [
+                InlineKeyboardButton("friend", url="https://t.me/VALTAOITHEBOT"),
+                InlineKeyboardButton("Shinchan", url="https://t.me/Shinchansrobot"),
+            ],
             [
                 InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
             ]
@@ -90,9 +97,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [
                 InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
             ],
-    
             [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                InlineKeyboardButton("my owner", url="https://t.me/crimsonflashs"),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url="https://t.me/pigasusupdates"),
+            ],
+            [
+                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
+                InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
+            ],
+            [
+               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url="t.me/VALTAOIVCPLAYERBOT?startgroup=true"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
